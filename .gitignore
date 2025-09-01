@@ -1,0 +1,16 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore datasets and artifacts (anywhere in the repo)
+datasets/
+artifacts/
+
+# Optional: logs and system files
+*.log
+.DS_Store
+Thumbs.db
