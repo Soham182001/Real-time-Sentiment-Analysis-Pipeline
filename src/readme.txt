@@ -19,6 +19,16 @@ This project implements a real-time sentiment analysis pipeline for customer rev
 
 ## Running the Application
 
+### Prerequisites
+- Docker Desktop installed
+- Docker Compose installed
+
+### Build and start containers in detached mode
+docker compose up -d --build
+
+### Verify containers are running
+docker ps
+
 ### Start Spark Streaming Job
 ```bash
 docker exec -it spark-master \
@@ -58,3 +68,8 @@ Ensure all necessary credentials are properly configured in config.py:
 ## Dataset
 Create a Dataset folder inside src
 and download the dataset from https://business.yelp.com/data/resources/open-dataset/
+
+
+
+### ps: if you dont want to run it in docker change the host to localhost in spark-streaming.py and streaming-socker.py
+and simply run two python scripts individually
